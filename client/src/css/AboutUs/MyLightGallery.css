@@ -1,0 +1,42 @@
+.my-light-gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    justify-self: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.my-light-gallery .gallery-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.my-light-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height); 
+    object-fit: cover; 
+    display: block;
+}
+
+.lg-inner {
+    align-items: center !important;
+    justify-content: center !important; 
+    display: flex !important;
+  }
+  
+  @media  (max-width: 480px) {
+    .my-light-gallery {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        height: 1200px;
+    }
+  }

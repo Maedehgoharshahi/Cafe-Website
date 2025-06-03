@@ -1,0 +1,255 @@
+.aboutus header ul li a {
+    color: white;
+}
+
+.aboutus header .bx {
+    color: white;
+}
+
+.aboutus .history {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.aboutus .history .media {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    align-self: start;
+    width: 45%;
+    flex-basis: 50%;
+    align-items: center;
+}
+  
+.aboutus .history .media video {
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 1;
+}
+  
+.aboutus .history .media img {
+    width: 53%;          
+    height: auto;
+    border-radius: 15px;
+    grid-column: 1 / -2;
+    grid-row: 1 / -1;
+    justify-self: start;        
+    align-self: center;         
+    z-index: 2;
+    border: 7px solid white;
+}
+  
+.aboutus .history .content {
+  flex-basis: 45%;
+}
+
+.aboutus .history .content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.aboutus .team {
+    padding: 0 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.aboutus .team h1 , .aboutus .gallery h1 {
+    color: #a59079;
+    font-size: 30px;
+    border-bottom: 4px solid #a59079;
+    padding: 0 50px;
+}
+
+.aboutus .team p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.aboutus .team .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.aboutus .team .members img {
+    width: 200px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border: 3px solid #a59079;
+    padding: 6px;
+} 
+
+.aboutus .team .members h2 {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.aboutus .team .members p {
+    color: #a59079;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.aboutus .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutus .gallery .pictures {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px 100px 12vw;
+}
+
+.aboutus .gallery .pictures .carousel {
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.aboutus .gallery .pictures .lightgallery {
+    width: 55%;
+    height: 50%;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+.aboutus .gallery .pictures {
+    padding: 0 25px 25px 3vw;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .aboutus .history {
+    display: flex;
+    flex-direction: column;
+    }
+    .aboutus .history .media {
+        width: 85%;
+        align-self: center;
+    }
+    .aboutus .team .members {
+        gap: 20px;
+    }
+    .aboutus .team .members img {
+        width: 170px;
+    }
+    .aboutus .gallery .pictures {
+        flex-direction: column-reverse;
+
+    }
+
+    .aboutus .gallery .pictures .carousel {
+        width: 100%;
+    }
+
+    .aboutus .gallery .pictures .lightgallery {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .aboutus header ul li a {
+        color: black;
+    }
+    .aboutus .history {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutus .history .media {
+        width: 100%;
+        align-self: center;
+    }
+    .aboutus .team .members {
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutus .team .members img {
+        width: 170px;
+    }
+    .aboutus .gallery .pictures {
+        flex-direction: column-reverse;
+        padding: 0 5vw 100px 5vw;
+    }
+
+    .aboutus .gallery .pictures .carousel {
+        width: 100%;
+    }
+
+    .aboutus .gallery .pictures .lightgallery {
+        width: 100%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus header ul li a {
+        color: black;
+    }
+    .aboutus .history {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 15px;
+    }
+
+    .aboutus .history .media {
+        width: 100%;
+        align-self: center;
+        justify-items: center;
+    }
+    .aboutus .history .media img {
+        display: none;
+    }
+
+    .aboutus .history .media video {
+        width: 95%;
+    }
+
+    .aboutus .team .members {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .aboutus .team {
+        padding: 0px 15px 40px 15px;
+    }
+    .aboutus .gallery .pictures {
+        flex-direction: column-reverse;
+        padding: 0 5vw 50px 5vw;
+    }
+
+    .aboutus .gallery .pictures .carousel {
+        width: 100%;
+    }
+
+    .aboutus .gallery .pictures .lightgallery {
+        width: 100%;
+        padding-top: 50px;
+    }
+}

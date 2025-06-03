@@ -1,0 +1,155 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 40px;
+    padding: 50px 0;
+    background-color: #f8d4b437;
+    position: relative;
+}
+/* .popular::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background: linear-gradient(to bottom, white 0%, transparent 100%);
+    pointer-events: none; 
+    z-index: 2;
+}
+
+.popular::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; 
+    background: linear-gradient(to top, white 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 2;
+} */
+.popular h1 {
+    color: rgba(0, 0, 0, 0.622);
+    font-size: 30px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.622);
+    padding: 0 50px;
+}
+
+.popular p {
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 50px 0 50px;
+}
+
+.popular .container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 40px;
+}
+  
+.popular .container .line {
+    width: 100%;
+    height: 120px;
+    background-color: #a59079;
+    /* border-radius: 15px; */
+    position: absolute;
+}
+
+.popular .container .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    width: 100%;
+}
+
+.popular .container .options .item {
+    background-color: #f8d4b437;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 230px;
+    /* padding: 7px; */
+    border-radius: 15px;
+    transition: 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+/* 
+.popular .container .options .item:hover {
+    transform: scale(1.05);
+
+} */
+
+.popular .container .options .item img {
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.popular .container .options .item h2 {
+    font-size: 24px;
+    padding: 7px;
+}
+
+.popular .container .options .item p {
+    padding: 7px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .popular .container {
+        padding: 50px 25px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .popular .container {
+        padding: 50px 40px;
+    }
+
+    .popular .container .line {
+        display: none;
+    }
+
+    .popular .container .options {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .popular .container .options .item {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popular {
+        padding: 50px 0;
+    }
+    .popular .container {
+        padding: 50px 15px;
+    }
+
+    .popular .container .line {
+        display: none;
+    }
+
+    .popular .container .options {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .popular .container .options .item {
+        width: 250px;
+    }
+}
+
+
+

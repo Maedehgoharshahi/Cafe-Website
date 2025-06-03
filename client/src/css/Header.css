@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: none;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+header h1 {
+    background-color: #f18d3d;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 22px;
+    color: white;
+}
+
+header div .bx-menu {
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+header ul li a {
+    font-size: 18px;
+    transition: 0.3s ease;
+    color: black;
+}
+
+header ul li a:hover {
+    color: #f18d3d;
+    font-size: 20px;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    header div .bx-menu {
+        display: block;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        display: none;
+        margin-top: 50px;
+        font-size: 25px;
+        padding: 40px;
+        background-color: #FDF2EB;
+        position: absolute;
+    }
+
+    header ul.active {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: 100%;
+    }
+
+    header ul li {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header div .bx-menu {
+        display: block;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul {
+        display: none;
+        margin-top: 50px;
+        font-size: 25px;
+        padding: 20px;
+        background-color: #FDF2EB;
+        position: absolute;
+    }
+
+    header ul.active {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: 100%;
+    }
+
+    header ul li {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

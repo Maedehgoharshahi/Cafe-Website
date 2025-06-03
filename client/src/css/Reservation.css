@@ -1,0 +1,148 @@
+ .reservation header ul li a {
+    color: white;
+}
+
+ .reservation header .bx {
+    color: white;
+}
+
+.reservation .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.reservation .container .reservation-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    width: 900px;
+    border-radius: 20px;
+    background-color: #FDF2EB;
+
+}
+
+.reservation .container .reservation-container  img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.reservation .container .reservation-container  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+}
+
+.reservation .container .reservation-container  form h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.reservation .container .reservation-container  table  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.reservation .container .reservation-container  table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservation .container .reservation-container  table tr:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+
+.reservation .container .reservation-container  table .input  {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.rmdp-input {
+    padding: 17px 8px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    background-color: white !important;
+}
+
+.reservation .container .reservation-container  table button[type=submit] {
+    height: 40px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #f18d3d;
+    cursor: pointer;
+    width: 130px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.reservation .container .reservation-container  table  button[type=submit]:hover {
+    transform: scale(1.05);
+} 
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .reservation .container .reservation-container {
+        width: 750px;
+    }
+
+    .reservation .container {
+        padding: 50px 15px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px)  {
+    .reservation .container {
+        width: 100%;
+    }
+
+    .reservation .container .reservation-container {
+        padding: 40px;
+    }
+
+    .reservation .container .reservation-container form {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .reservation .container .reservation-container  img {
+        display: none;
+    }
+
+    .reservation header ul li a {
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation .container {
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .reservation .container .reservation-container form {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .reservation .container .reservation-container  img {
+        display: none;
+    }
+
+    .reservation .container .reservation-container  table tr {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reservation header ul li a {
+        color: black;
+    }
+}
